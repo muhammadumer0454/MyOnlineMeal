@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* scrollbar-gutter: stable ; */
+}
+
+/* html scroll behaviour */
+
+html{
+    scroll-behavior: smooth;
+    scrollbar-color: rgba(0, 0, 0, 0.68) white;
+}
+
+/* html scroll behaviour */
+
+/* How to customize html  scroll bar */
+/* html::-webkit-scrollbar{
+    width: 3vw;
+    height: 0;
+    
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: gray;
+    /* border-radius: 15px; */
+
+    
+/* }
+html::-webkit-scrollbar-track{
+    background-color: rgba(128, 128, 128, 0.29);
+}  */
+
+/* How to customize html  scroll bar */
+
+
+
+/* Utility Classes */
+
+.text-center {
+    text-align: center;
+}
+
+.fs {
+    font-size: 41px;
+}
+
+.center {
+    margin: auto;
+}
+
+.container {
+    padding: 15px;
+}
+
+.white {
+    color: white;
+}
+
+.font {
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+.spacing {
+    letter-spacing: 0.5px;
+}
+
+/* navigation */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.212);
+
+}
+
+header img {
+    width: 85px;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+ 
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 20px;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    font-size: 23px;
+}
+
+header ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.bg {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* min-height: 60vh; */
+    padding-bottom: 55px;
+
+
+
+}
+
+.bg h1 {
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 50px;
+    padding: 18px 0;
+    margin-top: 15px;
+
+}
+
+.containerCustom {
+    padding-inline: 5rem;
+    padding: 50px;
+}
+
+.bg p {
+    padding: 15px 0;
+    line-height: 1.3;
+}
+
+.containerCustom button {
+    display: block;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 7px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.272);
+    color: white;
+    font-size: 33px;
+    cursor: pointer;
+}
+
+/* Services */
+
+.box {
+    border: 2px solid darkred;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 26px;
+    background-color: rgba(128, 128, 128, 0.119);
+}
+
+.box img {
+    padding: 10px;
+    width: 13rem;
+    /* width: 140px !important; */
+    margin: auto;
+    display: block;
+}
+
+.box h1 {
+    padding: 10px;
+    font-size: 33px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    gap: 15px;
+    align-items: center;
+}
+
+.width {
+    width: 9rem !important;
+}
+
+.servicesH1 {
+    padding: 10px;
+    font-size: 38px;
+}
+
+/* Cient section */
+
+.client-section {
+    position: relative;
+}
+
+.client-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 260px;
+    background-image: url("https://media.istockphoto.com/id/1456403368/photo/fresh-healthy-organic-vegetables-background.jpg?s=1024x1024&w=is&k=20&c=B1y0KO83CPjbmvqDswlAHSc_WKiQaZXouY8hae6zMXg=");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.client-item {
+
+    padding: 30px 24px;
+
+}
+
+.client-section h1 {
+    padding-top: 35px;
+}
+
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients img {
+    height: 114px;
+    cursor: pointer;
+}
+
+
+
+/* Contact section */
+
+.contact {
+    position: relative;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-image: url("Images/Phone.jpg"); */
+    background-image: url("Phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+
+.contact h1 {
+    padding: 13px;
+}
+
+.contactBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.contactBox input,
+.contactBox textarea {
+    width: 100%;
+    padding: 6px;
+    outline: none;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    border: none;
+    box-shadow: inset 0 0 2.2px 0;
+
+}
+
+.contactBox form {
+    width: 60%;
+}
+
+.contactBox .group label {
+    font-size: 1.3rem;
+}
+
+.contactBox button {
+    padding: 4px 30px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: inset 0 0 5px 0;
+    background-color: white;
+    letter-spacing: 0.5px;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.footer {
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
